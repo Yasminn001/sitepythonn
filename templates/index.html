@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Yasmin</title>
+
+<style>
+    body{
+        background-color: rgb(253, 251, 248);
+    }
+    
+    h1{
+        background-color: brown;
+        color: aliceblue;
+    }
+    .nomeVisitante{
+    color: brown;
+    }
+    .botao{
+    background-color: brown;
+    color: aliceblue;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    
+    }
+    
+    .botao:hover{
+        background-color: rgb(105, 43, 43);
+    }
+</style>
+
+</head>
+
+<body>
+    
+<center>
+
+<h1>Bem-vindo ao meu site</h1>
+<h3>Esse site é sobre Perfumes</h3>
+<p>Bem Vindo</p>
+<p id="visitante" class="nomeVisitante" > Aguardando....</p>
+   
+    <a href="https://www.belezanaweb.com.br"><img src="perfume.webp" alt=""></a>
+    <br>
+    <a href="https://www.belezanaweb.com.br">clique no link</a>
+    <br>
+    <h3>Cadastro</h3>
+    <label>Nome:</label>
+    <br>
+    <input type="text">
+    <br>
+    <label>Sobrenome:</label>
+    <br>
+    <input type="text">
+    <br>
+    <br>
+    <button class="botao" onclick="enviar()">Enviar</button>
+
+    <script>
+
+        function enviar(){
+            alert("cadastro feito com sucesso!")
+        }
+        
+        var usuario = prompt("Digite o seu nome")
+        
+        document.getElementById('visitante').innerHTML = usuario
+
+    </script>
+
+</center>
+
+</body>
+</html>
